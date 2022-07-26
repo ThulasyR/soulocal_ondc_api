@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'soulocalDB',
         'USER' : 'root',
-        'PASSWORD' : '8Ny9auml',
+        'PASSWORD' : 'root',
         'HOST' : 'localhost',
         'PORT' : '3306'
     }

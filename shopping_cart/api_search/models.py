@@ -27,6 +27,19 @@ class ApiContextCategory(models.Model):
     CATEGORY_TIMELABLE= models.CharField(max_length=250,blank=True, null=True, default=None)
     CATEGORY_TIMESTAMP= models.CharField(max_length=250,blank=True, null=True, default=None)
     CATEGORY_DURATION= models.CharField(max_length=250,blank=True, null=True, default=None)
-    CATEGORY_RANGEDAYS= models.CharField(max_length=250,blank=True, null=True, default=None)
-    
-    
+    CATEGORY_RANGESTDAYS= models.CharField(max_length=250,blank=True, null=True, default=None)
+    CATEGORY_RANGEENDDAYS= models.CharField(max_length=250,blank=True, null=True, default=None)
+
+
+class ApiContextProvider(models.Model):
+    PROVIDER_NAME= models.CharField(max_length=250)
+    PROVIDER_CODE= models.CharField(max_length=250,blank=True, null=True, default=None,)
+    PROVIDER_SYMBOL= models.CharField(max_length=250,blank=True, null=True, default=None,)
+    PRODIVER_SHORTDESC= models.CharField(max_length=250,blank=True, null=True, default=None,)
+    PROVIDER_LONGDESC= models.CharField(max_length=250,blank=True, null=True, default=None)
+    PROVIDER_IMAGES= models.ImageField(upload_to='upload',blank=True, null=True, default=None)  
+    PR0VIDER_TIMELABLE= models.CharField(max_length=250,blank=True, null=True, default=None)
+    PROVIDER_TIMESTAMP= models.CharField(max_length=250,blank=True, null=True, default=None)
+    PROVIDER_DURATION= models.CharField(max_length=250,blank=True, null=True, default=None)
+    PROVIDER_RANGESTDAYS= models.CharField(max_length=250,blank=True, null=True, default=None)
+    PROVIDER_RANGEENDAYS= models.CharField(max_length=250,blank=True, null=True, default=None)
